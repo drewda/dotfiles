@@ -1,6 +1,6 @@
 [user]
     name = Drew Dara-Abrams
-    editor = /usr/bin/mate -w
+    editor = /usr/bin/subl -w
     # editor = vim
 [diff]
     tool = vimdiff

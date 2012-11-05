@@ -24,8 +24,11 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 bundler textmate ruby osx gem cap history-substring-search)
+plugins=(git osx history-substring-search autojump rake)
 
 source $ZSH/oh-my-zsh.sh
+
+# disable correct
+unsetopt correct_all
 
 # Customize to your needs...
