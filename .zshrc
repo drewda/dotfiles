@@ -32,3 +32,10 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
+
+PATH="/Users/drew/software/android/android-sdk-mac/platform-tools:/Users/drew/software/android/android-sdk-mac/tools:$PATH"
+
+export PATH="/usr/local/share/npm/bin:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
