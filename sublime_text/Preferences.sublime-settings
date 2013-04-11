@@ -1,0 +1,37 @@
+{
+  "caret_style": "phase",
+  "theme": "Phoenix Dark.sublime-theme",
+  "phoenix_solid_current_tab": true,
+  "phoenix_color_green": true,
+  "phoenix_dirty_bottom_bar": true,
+  "phoenix_dirty_bottom_bar_red": true,
+  "phoenix_tabs_auto_width": true,
+  "phoenix_eighties": true,
+  "phoenix_color_expanded_folder": true,
+  "phoenix_sidebar_tree_medium": true,
+  "folder_exclude_patterns":
+  [
+    ".bundle",
+    ".git",
+    ".sass-cache",
+    "tmp",
+    "build",
+    "coverage",
+    "*.log"
+  ],
+  "font": "Meslo LG S",
+  "font_size": 16.5,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": false
+}
