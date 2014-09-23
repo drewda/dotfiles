@@ -1,0 +1,20 @@
+{
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"Cucumber",
+		"Git",
+		"GitGutter",
+		"GitHubinator",
+		"Grunt Snippets",
+		"JSLint",
+		"LESS",
+		"MacTerminal",
+		"nginx",
+		"Sass",
+		"SideBarEnhancements",
+		"SourceTree",
+		"SourceTree.app Menu",
+		"Theme - Phoenix"
+	]
+}

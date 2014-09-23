@@ -14,11 +14,11 @@ dirs.each do |dir|
   end
 end
 
-sublime_user_dir = File.join(home_dir, 'Library/Application Support/Sublime Text 2/Packages/User')
+sublime_user_dir = File.join(home_dir, 'Library/Application Support/Sublime Text 3/Packages/User')
+sublime_text_3_config_dir = 'sublime_text_3'
 
-dirs = %w(sublime_text/Preferences.sublime-settings)
-dirs.each do |dir|
-  dir = File.join(current_dir, dir)
+Dir.foreach(sublime_text_3_config_dir).each do |dir|
+  dir = File.join(current_dir, sublime_text_3_config_dir, dir)
   symlink = File.join(sublime_user_dir, File.basename(dir))
   if File.exist?(symlink)
     puts "File already exists: #{symlink}"
