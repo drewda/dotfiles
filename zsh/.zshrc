@@ -36,6 +36,9 @@ unsetopt correct_all
 PATH="/Users/drew/software/android/android-sdk-mac/platform-tools:/Users/drew/software/android/android-sdk-mac/tools:$PATH"
 
 export PATH="/usr/local/share/npm/bin:$PATH"
+export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
+export PATH="$NODE_PATH:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+eval "`npm completion`"
