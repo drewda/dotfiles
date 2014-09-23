@@ -28,6 +28,10 @@ plugins=(git history-substring-search autojump rake)
 
 source $ZSH/oh-my-zsh.sh
 
+# history-substring-search
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
 # disable correct
 unsetopt correct_all
 
