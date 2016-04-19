@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<root>
+    <devicevendordef>
+        <vendorname>MICROSOFT</vendorname>
+        <vendorid>0x045e</vendorid>
+    </devicevendordef>
+    <deviceproductdef>
+        <productname>MS_NATURAL_KEYBOARD_4000</productname>
+        <productid>0x00db</productid>
+    </deviceproductdef>
+    <item>
+        <name>Microsoft keyboard left Windows key as command</name>
+        <appendix>Use left Windows key as command key (Microsoft Natural Keyboard)</appendix>
+        <identifier>MS_KEYBOARD_LEFT_WINDOWS_KEY_AS_CMD</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::OPTION_L,
+            KeyCode::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMAND_L,
+            KeyCode::OPTION_L
+        </autogen>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::MS_NATURAL_KEYBOARD_4000</device_only>
+    </item>
+    <item>
+        <name>Microsoft keyboard right application key as command</name>
+        <appendix>Use right application key as command key (Microsoft Natural Keyboard)</appendix>
+        <identifier>MS_KEYBOARD_RIGHT_APP_KEY_AS_CMD</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::PC_APPLICATION,
+            KeyCode::COMMAND_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMAND_R,
+            KeyCode::PC_APPLICATION,
+        </autogen>
+        <device_only>DeviceVendor::MICROSOFT,DeviceProduct::MS_NATURAL_KEYBOARD_4000</device_only>
+    </item>
+</root>
