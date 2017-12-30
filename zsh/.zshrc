@@ -37,15 +37,37 @@ unsetopt correct_all
 
 # Customize to your needs...
 
-PATH="/Users/drew/software/android/android-sdk-mac/platform-tools:/Users/drew/software/android/android-sdk-mac/tools:$PATH"
+# PATH="/Users/drew/software/android/android-sdk-mac/platform-tools:/Users/drew/software/android/android-sdk-mac/tools:$PATH"
+
 ### Added by the Heroku Toolbelt
 #export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="/usr/local/share/npm/bin:$PATH"
-export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
-export PATH="$NODE_PATH:$PATH"
 
-source /usr/local/opt/autoenv/activate.sh
-eval "`npm completion`"
+# export PATH="/usr/local/share/npm/bin:$PATH"
+# export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
+# export PATH="$NODE_PATH:$PATH"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# source /usr/local/opt/autoenv/activate.sh
+export PATH=/usr/local/bin:$PATH
+
+export GITHUB_TOKEN=c13f9fac438d20849cd58674e056dfd2d14f1dd2
+
+export EDITOR='code'
+#source ~/.rbenv/versions/2.2.3/bin/tmuxinator.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/sbin:$PATH"
+
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+path=(
+  $path
+  $GOPATH/bin
+  $GOROOT/bin
+)

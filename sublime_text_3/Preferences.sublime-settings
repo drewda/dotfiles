@@ -1,6 +1,7 @@
 {
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Phoenix/Color Scheme/Tomorrow-Night.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"draw_white_space": "selection",
 	"folder_exclude_patterns":
 	[
 		".bundle",
@@ -12,7 +13,7 @@
 		"source_maps"
 	],
 	"font": "Meslo LG S",
-	"font_size": 16.5,
+	"font_size": 19,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -23,16 +24,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"phoenix_color_expanded_folder": true,
-	"phoenix_color_green": true,
-	"phoenix_dirty_bottom_bar": true,
-	"phoenix_dirty_bottom_bar_red": true,
-	"phoenix_eighties": true,
-	"phoenix_sidebar_tree_medium": true,
-	"phoenix_solid_current_tab": true,
-	"phoenix_tabs_auto_width": true,
 	"tab_size": 2,
-	"theme": "Phoenix Dark.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false
 }

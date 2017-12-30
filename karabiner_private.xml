@@ -8,6 +8,14 @@
         <productname>MS_NATURAL_KEYBOARD_4000</productname>
         <productid>0x00db</productid>
     </deviceproductdef>
+    <devicevendordef>
+        <vendorname>ATEN</vendorname>
+        <vendorid>0x0557</vendorid>
+    </devicevendordef>
+    <deviceproductdef>
+        <productname>ATEN_KVM_KEYBOARD</productname>
+        <productid>0x2213</productid>
+    </deviceproductdef>
     <item>
         <name>Microsoft keyboard left Windows key as command</name>
         <appendix>Use left Windows key as command key (Microsoft Natural Keyboard)</appendix>
@@ -39,5 +47,21 @@
             KeyCode::PC_APPLICATION,
         </autogen>
         <device_only>DeviceVendor::MICROSOFT,DeviceProduct::MS_NATURAL_KEYBOARD_4000</device_only>
+    </item>
+    <item>
+        <name>ATEN KVM Asus keyboard right application key as command</name>
+        <appendix>Use right application key as command key (on Asus keyboard through ATEN KVM)</appendix>
+        <identifier>ATEN_KVM_KEYBOARD_RIGHT_APP_KEY_AS_CMD</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::PC_APPLICATION,
+            KeyCode::COMMAND_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMAND_R,
+            KeyCode::PC_APPLICATION,
+        </autogen>
+        <device_only>DeviceVendor::ATEN,DeviceProduct::ATEN_KVM_KEYBOARD</device_only>
     </item>
 </root>
