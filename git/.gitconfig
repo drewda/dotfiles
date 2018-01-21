@@ -1,8 +1,7 @@
 [user]
 	name = Drew Dara-Abrams
-  editor = /usr/bin/subl -w
+  editor = /usr/bin/code
 	email = dda@dara-abrams.com
-  # editor = vim
 [diff]
   tool = vimdiff
 [color]
@@ -45,7 +44,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [push]
 	default = simple
