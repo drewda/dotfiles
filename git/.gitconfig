@@ -1,7 +1,7 @@
 [user]
 	name = Drew Dara-Abrams
   editor = /usr/bin/subl -w
-	email = drew@mapzen.com
+	email = dda@dara-abrams.com
   # editor = vim
 [diff]
   tool = vimdiff
