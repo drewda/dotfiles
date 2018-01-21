@@ -15,7 +15,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git history-substring-search autojump)
+plugins=(git history-substring-search autojump rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -26,10 +26,6 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # disable correct
 unsetopt correct_all
 
-# rbenv for Ruby version management
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # lazy loading of NVM for NodeJS version management
 source /Users/drew/.znvm/znvm.sh
 
@@ -38,9 +34,6 @@ export EDITOR='code'
 
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export PATH=/usr/local/bin:$PATH
-export PATH="/usr/local/sbin:$PATH"
 
 # direnv (replaces autoenv)
 eval "$(direnv hook zsh)"
