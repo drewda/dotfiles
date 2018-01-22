@@ -37,7 +37,7 @@
 [core]
   pager = less -FRSX
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = /Users/drew/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [apply]
   whitespace = fix
 [difftool "sourcetree"]
@@ -57,5 +57,3 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
-[commit]
-  template = /Users/drew/.stCommitMsg
