@@ -15,7 +15,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git history-substring-search autojump rbenv)
+plugins=(git history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -23,11 +23,21 @@ source $ZSH/oh-my-zsh.sh
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 # disable correct
 unsetopt correct_all
 
 # lazy loading of NVM for NodeJS version management
 source /Users/drew/.znvm/znvm.sh
+
+# rbenv for Ruby version management
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# pyenv for Python version management
+eval "$(pyenv init -)"
 
 # Visual Studio Code as default text editor
 export EDITOR='code'
