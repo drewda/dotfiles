@@ -28,3 +28,18 @@ Dir.foreach(sublime_text_3_config_dir).each do |dir|
     `ln -ns #{dir} #{symlink}`
   end
 end
+
+vscode_user_dir = File.join(home_dir, 'Library/Application Support/Code/User')
+vscode_config_dir = 'vscode'
+
+Dir.foreach(vscode_config_dir).each do |dir|
+  dir = File.join(current_dir, vscode_config_dir, dir)
+  symlink = File.join(vscode_user_dir, File.basename(dir))
+  if File.exist?(symlink)
+    puts "File already exists: #{symlink}"
+  else
+  	symlink.gsub!(' ', '\ ')
+    puts "Symlinking: #{symlink}"
+    `ln -ns #{dir} #{symlink}`
+  end
+end

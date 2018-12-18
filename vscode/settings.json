@@ -1,0 +1,50 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "git.confirmSync": false,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        80
+    ],
+    "editor.renderLineHighlight": "all",
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": "all",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bower_components": true,
+        "**/node_modules": true,
+        "tmp": true
+    },
+    "diffEditor.renderSideBySide": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "extensions.ignoreRecommendations": false,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "[plaintext]": {
+        "editor.wordWrap": "on"
+    },
+    "projectManager.git.ignoredFolders": [
+        // "node_modules",
+        "out",
+        "typings",
+        "test",
+        ".haxelib",
+        ".vscode"
+    ],
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.statusBar.feedback.visible": false,
+    "window.openFoldersInNewWindow": "on",
+    "gitlens.advanced.telemetry.enabled": false,
+    "githubPullRequests.telemetry.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "files.associations": {
+        "*.geojson": "json"
+    },
+    "circleci.rate": 15,
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.7"
+}

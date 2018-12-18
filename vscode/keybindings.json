@@ -1,0 +1,27 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  { 
+    "key": "ctrl+`",        
+    "command": "workbench.action.terminal.focus",
+    "when": "editorFocus"
+},
+{ 
+    "key": "ctrl+`",        
+    "command": "workbench.action.terminal.focus",
+    "when": "explorerViewletFocus"
+},
+{
+  "key": "shift+cmd+a",
+  "command": "git.checkout"
+}
+]
