@@ -18,7 +18,12 @@
         "**/.DS_Store": true,
         "**/bower_components": true,
         "**/node_modules": true,
-        "tmp": true
+        "tmp": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        ".byebug_history": true
     },
     "diffEditor.renderSideBySide": false,
     "telemetry.enableTelemetry": false,
@@ -43,8 +48,16 @@
     "githubPullRequests.telemetry.enabled": false,
     "gitlens.currentLine.enabled": false,
     "files.associations": {
-        "*.geojson": "json"
+        "*.geojson": "json",
+        ".envrc": "shellscript"
     },
     "circleci.rate": 15,
-    "python.pythonPath": "/usr/local/opt/python/bin/python3.7"
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
+    "git.autofetch": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "vscode-postgres.defaultConnection": "postgres://localhost",
+    "vscode-postgres.prettyPrintJSONfields": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false
 }
