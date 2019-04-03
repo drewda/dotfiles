@@ -43,3 +43,13 @@ Dir.foreach(vscode_config_dir).each do |dir|
     `ln -ns #{dir} #{symlink}`
   end
 end
+
+iterm2_config_file_name = 'com.googlecode.iterm2.plist'
+symlink = File.join(home_dir, 'Library', 'Preferences', iterm2_config_file_name)
+if File.exist?(symlink)
+  puts "File already exists: #{symlink}"
+else
+  puts "Symlinking: #{symlink}"
+  iterm2_config_file = File.join(current_dir, iterm2_config_file_name)
+  `ln -ns #{iterm2_config_file} #{symlink}`
+end
