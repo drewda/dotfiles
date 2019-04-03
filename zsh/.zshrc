@@ -12,7 +12,12 @@ ZSH_THEME="robbyrussell"
 DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git history-substring-search)
+plugins=(git history-substring-search fzf)
+
+# NVM for Node version management
+export NVM_DIR="$HOME/.nvm"
+export NVM_LAZY_LOAD=true
+plugins+=(zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,6 +27,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+alias jo="/usr/local/bin/jo" # give priority to the jo (JSON creation) command
 
 # disable correct
 unsetopt correct_all
@@ -33,9 +39,6 @@ eval "$(rbenv init -)"
 # Python 
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-# NodeJS: we're only using 8.x
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-
 # Visual Studio Code as default text editor
 export EDITOR='code'
 
@@ -46,12 +49,17 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 eval "$(direnv hook zsh)"
 
 # golang
-export PATH="/Users/drew/go/bin:$PATH"
+export GOPATH="${HOME}/go"
+export PATH="${GOPATH}/bin:$PATH"
 
 # GCP
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+# [[ -f /Users/drew/.npm/_npx/23443/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/drew/.npm/_npx/23443/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
 
 # Cargo (Rust package manager)
 # export PATH="/Users/drew/.cargo/bin:$PATH"
