@@ -5,9 +5,6 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="robbyrussell"
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"export NVM_DIR="$HOME/.nvm"
-
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
 
@@ -17,7 +14,9 @@ plugins=(git history-substring-search fzf)
 # NVM for Node version management
 export NVM_DIR="$HOME/.nvm"
 export NVM_LAZY_LOAD=true
-plugins+=(zsh-nvm)
+if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-nvm ]]; then
+  plugins+=(zsh-nvm)
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,9 +52,11 @@ export GOPATH="${HOME}/go"
 export PATH="${GOPATH}/bin:$PATH"
 
 # GCP
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
+if [[ -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/ ]]; then
+  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+  export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
+fi
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
