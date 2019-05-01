@@ -61,5 +61,5 @@ export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$P
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 # [[ -f /Users/drew/.npm/_npx/23443/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/drew/.npm/_npx/23443/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
 
-# Cargo (Rust package manager)
-# export PATH="/Users/drew/.cargo/bin:$PATH"
+# use homebrew findutils instead of Mac versions
+PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
