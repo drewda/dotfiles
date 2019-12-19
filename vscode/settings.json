@@ -49,15 +49,73 @@
     "gitlens.currentLine.enabled": false,
     "files.associations": {
         "*.geojson": "json",
+        "*.osc": "xml",
         ".envrc": "shellscript"
     },
     "circleci.rate": 15,
     "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
     "git.autofetch": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "vscode-postgres.defaultConnection": "postgres://localhost",
     "vscode-postgres.prettyPrintJSONfields": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "go.useLanguageServer": true,
+    "terminal.integrated.rendererType": "dom",
+    "wordcounter.languages": [
+        "plaintext",
+        "markdown"
+    ],
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "html.autoClosingTags": false,
+    "solargraph.checkGemVersion": false,
+    "terminal.integrated.copyOnSelection": true,
+    "workbench.enableExperiments": false,
+    "files.autoSave": "off",
+    "[markdown]": {
+        // force centering in zen mode
+        "zenMode.centerLayout": true,
+        // use the beautiful duospace font when available
+        "editor.fontFamily": "iA Writer Duospace, monospace",
+        // enable word wrap, since horizontal scroll while writing isn't human
+        "editor.wordWrap": "on",
+        // i don't need line numbers, i'm not coding
+        "editor.lineNumbers": "off",
+        // light by default, but can be easily toggled to dark
+        "workbench": "Default Light+",
+        // i don't need rules, i'm not coding
+        "editor.rulers": [],
+        // larger text, to improve focus on writing
+        "editor.fontSize": 14,
+        // more comfortable line height
+        "editor.lineHeight": 25,
+        // disable editor suggestions based on previous words
+        "editor.quickSuggestions": false,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "git-commit",
+        "handlebars",
+        "html",
+        "latex",
+        "markdown",
+        "plaintext",
+        "restructuredtext",
+        "text"
+    ],
+    "[handlebars]": {
+        "editor.defaultFormatter": "mfeckies.handlebars-formatter"
+    },
+    "todo-tree.highlights.enabled": true,
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
     "python.jediEnabled": false
 }

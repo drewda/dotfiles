@@ -23,5 +23,13 @@
 {
   "key": "shift+cmd+a",
   "command": "git.checkout"
+},
+{
+  "key": "cmd+=",
+  "command": "-workbench.action.zoomIn"
+},
+{
+  "key": "cmd+numpad_add",
+  "command": "-workbench.action.zoomIn"
 }
 ]
