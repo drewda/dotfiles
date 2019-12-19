@@ -63,4 +63,4 @@ fi
 # [[ -f /Users/drew/.npm/_npx/23443/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/drew/.npm/_npx/23443/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
 
 # use homebrew findutils instead of Mac versions
-PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"export PATH="/usr/local/opt/sqlite/bin:$PATH"
