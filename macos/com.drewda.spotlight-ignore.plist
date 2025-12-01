@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.drewda.spotlight-ignore</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/drew/code/drewda/dotfiles/macos/macos_searchlight_ignore.sh</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>86400</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/drew/Library/Logs/spotlight-ignore.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/drew/Library/Logs/spotlight-ignore.err.log</string>
+</dict>
+</plist>
+
